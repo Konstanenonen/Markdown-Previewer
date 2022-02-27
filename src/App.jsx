@@ -1,9 +1,10 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import { marked } from 'marked';
+import startingText from './startingText';
 
 function App() {
-  const [text, setText] = React.useState('');
+  const [text, setText] = React.useState(startingText);
 
   function getMarkdownText() {
     const rawMarkup = marked.parse(text);
@@ -12,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Markdown Previewer</h1>
       <textarea id="editor" value={text} onChange={(event) => setText(event.target.value)} />
       <div id="preview" dangerouslySetInnerHTML={getMarkdownText()} />
     </div>
