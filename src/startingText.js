@@ -1,43 +1,25 @@
 /* eslint-disable quotes */
-const startingText = `# This is a Markdown Previewer
+const startingText = `# The Markdown Previewer :)
 ## This is H2 element
 This is a [link](https://konstanenonen.github.io/personal-website)
 
-Heres some code, ${"`"}<div></div>${"`"}, between 2 backticks.
+Here is some code: ${"`"}<div>Hello World</div>${"`"}
 ${"```"}
 // this is multi-line code:
 
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '${"```"}' && lastLine == '${"```"}') {
-    return multiLineCode;
-  }
+function helloWorld() {
+  console.log(Small step for a man..);
+  return "A GIANT LEAP FOR A MAN KIND!!!";
 }
 ${"```"}
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+**This is some Bold text**
 
-There's also [links](https://www.freecodecamp.org), and
-> Block Quotes!
+> This is a block Quote
 
-And if you want to get really crazy, even tables:
+- This is a list item
 
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | -------------
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+## And this is a picture of a dog
 
-- And of course there are lists.
-  - Some are bulleted.
-    - With different indentation levels.
-        - That look like this.
-
-
-1. And there are numbered lists too.
-1. Use just 1s if you want!
-1. And last but not least, let's not forget embedded images:
-
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)`;
+![A charming dog](https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`;
 
 export default startingText;
